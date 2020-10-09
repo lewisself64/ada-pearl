@@ -1,0 +1,11 @@
+.entry-content {
+	.wp-block-columns {
+		margin: 0 auto;
+
+		.wp-block-column {
+			> * {
+				margin: 0 0 32px 0;
+			}
+		}
+	}
+}

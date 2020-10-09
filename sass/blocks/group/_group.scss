@@ -1,0 +1,15 @@
+.entry-content {
+	.wp-block-group {
+		margin: 0 auto;
+
+		.wp-block-group__inner-container {
+			> * {
+				margin: 0 0 32px 0;
+			}
+			
+			.wp-block-columns {
+				margin: 0 auto;
+			}
+		}
+	}
+}

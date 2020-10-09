@@ -85,6 +85,9 @@ if ( ! function_exists( 'ada_setup' ) ) :
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
+		
+		// Add theme support for gutenberg alignment.
+		add_theme_support( 'align-wide' );
 
 		/**
 		 * Add support for core custom logo.
