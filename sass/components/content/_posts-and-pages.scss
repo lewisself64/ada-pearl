@@ -7,6 +7,10 @@
 	margin: 0 0 1.5em;
 }
 
+.single-post article {
+	margin: 0;
+}
+
 .updated:not(.published) {
 	display: none;
 }
@@ -19,6 +23,17 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.entry-header {
+	padding: 32px 0;
+	text-align: center;
+	margin: 0 0 32px 0;
+	background-color: #e8e8e8;
+
+	h1 {
+		margin-top: 0;
+	}
 }
 
 .entry-content {
@@ -39,5 +54,22 @@
 
 	> .alignfull {
 		max-width: 100%;
+	}
+}
+
+.entry-footer {
+	padding: 32px 0;
+	background-color: #e1e1e1;
+	text-align: center;
+
+	span {
+		display: block;
+		margin: 1em 0;
+	}
+}
+
+@media( min-width: 900px ) {
+	.single-post article {
+		margin: 0 0 32px 0;
 	}
 }
