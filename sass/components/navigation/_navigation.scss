@@ -101,16 +101,21 @@
 				padding: 10px;
 			}
 		}
+
+		li {
+			display: inline-block;
+		}
 	}
 
 	.main-navigation ul,
 	.main-navigation.toggled ul {
-		display: flex;
+		display: block;
 	}
 
 	.main-navigation {
 		.nav-menu {
 			padding: 0 32px;
+			text-align: center;
 		}
 
 		ul {
@@ -124,6 +129,7 @@
 				z-index: 99999;
 				width: 200px;
 				display: block;
+				text-align: left;
 
 				ul {
 					background-color: $color__header-navigation-dark;
