@@ -103,6 +103,9 @@ if ( ! function_exists( 'ada_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		// Remove theme support for default block patterns
+		remove_theme_support( 'core-block-patterns' );
 	}
 endif;
 add_action( 'after_setup_theme', 'ada_setup' );
