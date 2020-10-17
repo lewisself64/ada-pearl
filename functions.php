@@ -167,6 +167,11 @@ function ada_scripts() {
 add_action( 'wp_enqueue_scripts', 'ada_scripts' );
 
 /**
+ * Create theme block patterns.
+ */
+require get_template_directory() . '/inc/block-patterns.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
