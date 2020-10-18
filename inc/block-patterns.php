@@ -15,6 +15,13 @@ function ada_register_block_patterns() {
 	if ( class_exists( 'WP_Block_Patterns_Registry' ) ) {
 
 		register_block_pattern_category(
+			__( 'banners', 'ada' ),
+			array(
+				'label' => __( 'Banners', 'ada' )
+			)
+		);
+
+		register_block_pattern_category(
 			__( 'call-to-actions', 'ada' ),
 			array(
 				'label' => __( 'Call To Actions', 'ada' )
