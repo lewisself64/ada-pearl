@@ -2,6 +2,10 @@
 	.wp-block-group {
 		padding: 0;
 
+		&.has-background {
+			padding: 32px 0;
+		}
+
 		&.has-background.alignfull {
 			margin: 0 auto;
 
@@ -24,6 +28,12 @@
 			.wp-block-columns {
 				margin: 0 auto;
 			}
+		}
+	}
+
+	.wp-block-column {
+		.wp-block-group {
+			margin: 0;
 		}
 	}
 }
