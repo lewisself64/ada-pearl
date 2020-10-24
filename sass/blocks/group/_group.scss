@@ -14,6 +14,10 @@
 			}
 		}
 
+		&.has-background.alignwide {
+			margin: 32px;
+		}
+
 		.wp-block-group__inner-container {
 			> * {
 				margin: 0 auto 32px auto;
@@ -28,12 +32,28 @@
 			.wp-block-columns {
 				margin: 0 auto;
 			}
+
+			> .alignwide {
+				max-width: 1280px;
+			}
+
+			> .alignfull {
+				max-width: 100%;
+			}
 		}
 	}
 
 	.wp-block-column {
 		.wp-block-group {
 			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 1344px) {
+	.entry-content {
+		.wp-block-group.alignwide.has-background {
+			margin: 32px auto;
 		}
 	}
 }
