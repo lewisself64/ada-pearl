@@ -85,9 +85,12 @@ if ( ! function_exists( 'ada_setup' ) ) :
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
-		
+
 		// Add theme support for gutenberg alignment.
 		add_theme_support( 'align-wide' );
+
+		// Add theme support for editor styling
+		add_theme_support( 'editor-styles' );
 
 		/**
 		 * Add support for core custom logo.
@@ -153,6 +156,12 @@ function ada_widgets_init() {
 	);
 }
 add_action( 'widgets_init', 'ada_widgets_init' );
+
+function ada_admin_scripts() {
+	add_editor_style( 'style-editor.css' );
+}
+add_action( 'admin_init', 'ada_admin_scripts' );
+
 
 /**
  * Enqueue scripts and styles.
