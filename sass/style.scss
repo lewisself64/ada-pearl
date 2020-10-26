@@ -49,6 +49,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Media
 	- Captions
 	- Galleries
+# Patterns
+	- Meet The Team
+	- Portfolio
+	- Pricing Plans
 # Utilities
 	- Accessibility
 	- Alignments
@@ -90,6 +94,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Components
 --------------------------------------------------------------*/
 @import "components/components";
+
+/*--------------------------------------------------------------
+# Patterns
+--------------------------------------------------------------*/
+@import "patterns/patterns";
 
 /*--------------------------------------------------------------
 # Utilities

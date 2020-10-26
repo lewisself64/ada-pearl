@@ -1,0 +1,9 @@
+.wp-block-buttons {
+	.wp-block-button {
+		margin: 0;
+
+		&:hover a {
+			text-decoration: underline;
+		}
+	}
+}

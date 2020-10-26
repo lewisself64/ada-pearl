@@ -85,9 +85,12 @@ if ( ! function_exists( 'ada_setup' ) ) :
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
-		
+
 		// Add theme support for gutenberg alignment.
 		add_theme_support( 'align-wide' );
+
+		// Add theme support for editor styling
+		add_theme_support( 'editor-styles' );
 
 		/**
 		 * Add support for core custom logo.
@@ -103,6 +106,9 @@ if ( ! function_exists( 'ada_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		// Remove theme support for default block patterns
+		remove_theme_support( 'core-block-patterns' );
 	}
 endif;
 add_action( 'after_setup_theme', 'ada_setup' );
@@ -151,6 +157,12 @@ function ada_widgets_init() {
 }
 add_action( 'widgets_init', 'ada_widgets_init' );
 
+function ada_admin_scripts() {
+	add_editor_style( 'style-editor.css' );
+}
+add_action( 'admin_init', 'ada_admin_scripts' );
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -165,6 +177,11 @@ function ada_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ada_scripts' );
+
+/**
+ * Create theme block patterns.
+ */
+require get_template_directory() . '/inc/block-patterns.php';
 
 /**
  * Implement the Custom Header feature.
