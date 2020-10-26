@@ -4,6 +4,7 @@
  */
 .wp-block {
     max-width: 900px;
+    margin: 32px auto;
 }
 
 /* 
@@ -19,4 +20,5 @@
  */
 .wp-block[data-align="full"] {
     max-width: 100%;
+    margin: 0;
 }
