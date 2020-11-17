@@ -31,7 +31,8 @@
 }
 
 .blog,
-.archive {
+.archive,
+.search {
 	.page-title {
 		text-align: center;
 	}
@@ -173,7 +174,8 @@
 
 @media( min-width: 900px ) {
 	.blog,
-	.archive {
+	.archive,
+	.search {
 		main {
 			grid-gap: 32px;
 			grid-template-columns: 1fr 1fr;
@@ -195,7 +197,8 @@
 
 @media( min-width: 1360px ) {
 	.blog,
-	.archive {
+	.archive,
+	.search {
 		main {
 			margin: 32px auto;
 		}
