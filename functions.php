@@ -179,6 +179,19 @@ function ada_scripts() {
 add_action( 'wp_enqueue_scripts', 'ada_scripts' );
 
 /**
+ * Modify search to only include posts
+ */
+function ada_modify_search($query) {
+	if ($query->is_search) {
+		$query->set('post_type', 'post');
+	}
+
+	return $query;
+}
+add_filter( 'pre_get_posts', 'ada_modify_search' );
+
+
+/**
  * Create theme block patterns.
  */
 require get_template_directory() . '/inc/block-patterns.php';
