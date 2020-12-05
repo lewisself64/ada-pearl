@@ -1008,14 +1008,57 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
-.entry-header {
+.entry-header,
+.page-header {
 	padding: 32px 0;
 	text-align: center;
 	background-color: #e8e8e8;
 }
 
-.entry-header h1 {
+.entry-header h1,
+.page-header h1 {
 	margin: 0;
+}
+
+.error-404 .page-content,
+.not-found .page-content {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.error-404 .page-content > p,
+.not-found .page-content > p {
+	margin-top: 0;
+}
+
+.error-404 .page-content .search-field,
+.not-found .page-content .search-field {
+	width: 300px;
+	padding: 5px;
+}
+
+.error-404 .page-content .search-submit,
+.not-found .page-content .search-submit {
+	margin-top: 32px;
+	border: 2px solid #000;
+	font-size: 18px;
+	padding: 12px 24px;
+	text-decoration: none;
+	color: #000;
+	border-radius: 0;
+	background-color: transparent;
+	display: block;
+}
+
+.error-404 .page-content .search-submit:hover,
+.not-found .page-content .search-submit:hover {
+	text-decoration: underline;
+	border-color: #000;
+	cursor: pointer;
+}
+
+.error-404 .page-content {
+	margin: 32px auto;
 }
 
 .blog .page-title,
