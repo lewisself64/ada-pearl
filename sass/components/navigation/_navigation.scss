@@ -2,7 +2,7 @@
 	display: block;
 	width: 100%;
 
-	.menu-primary-container {
+	> div {
 		background-color: $color__header-navigation;
 
 		a {
@@ -94,7 +94,7 @@
 	}
 
 	.main-navigation {
-		.menu-primary-container {
+		> div {
 			ul ul a,
 			ul ul ul a,
 			ul ul ul ul a {

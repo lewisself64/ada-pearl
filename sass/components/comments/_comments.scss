@@ -1,8 +1,12 @@
 #comments {
-	max-width: 900px;
+	max-width: 1280px;
 	margin: 0 auto 32px auto;
 	background-color: #e8e8e8;
 	padding: 20px;
+	
+	#reply-title {
+		margin-top: 0;
+	}
 
 	.comments-title {
 		margin: 0 0 20px 0;
@@ -75,31 +79,37 @@
 	line-height: 41px;
 }
 
+.comment-respond {
+	margin: 16px 0 0 0;
+}
+
 .comment-reply-link,
 .comment-edit-link,
 #cancel-comment-reply-link,
 #submit {
-	background-color: #555;
 	text-decoration: none;
-	color: #fff;
-	padding: 5px 10px;
-	border-radius: 5px;
 	font-weight: normal;
+	border: 2px solid #000;
+	padding: 12px 24px;
+	font-size: 18px;
+	border-radius: 0;
+	color: #000;
 
-	&:hover,
-	&:visited,
-	&:focus {
-		color: #fff!important;
-	}
-	
 	&:hover {
 		text-decoration: underline;
+		cursor: pointer;
 	}
 }
 
-#submit {
-	padding: 10px 15px;
-	border: 0;
+.comment-reply-link,
+.comment-edit-link,
+#cancel-comment-reply-link {
+	padding: 6px 12px;
+}
+
+.comment-reply-link,
+#cancel-comment-reply-link {
+	display: inline-block;
 }
 
 .form-submit {
