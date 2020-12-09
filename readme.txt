@@ -1,4 +1,4 @@
-=== Ada ===
+=== Ada_Pearl ===
 
 Contributors: lewisself64
 Tags: block-patterns, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, threaded-comments, translation-ready, wide-blocks

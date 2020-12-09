@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Ada
+ * @package Ada_Pearl
  */
 
 ?>
@@ -16,7 +16,7 @@
 		</header><!-- .entry-header -->
 	<?php endif; ?>
 
-	<?php ada_post_thumbnail(); ?>
+	<?php ada_pearl_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -24,7 +24,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ada' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ada-pearl' ),
 				'after'  => '</div>',
 			)
 		);
