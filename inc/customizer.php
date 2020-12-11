@@ -56,6 +56,6 @@ function ada_pearl_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function ada_pearl_customize_preview_js() {
-	wp_enqueue_script( 'ada-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), ADA_PEARL_VERSION, true );
+	wp_enqueue_script( 'ada-pearl-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), ADA_PEARL_VERSION, true );
 }
 add_action( 'customize_preview_init', 'ada_pearl_customize_preview_js' );
