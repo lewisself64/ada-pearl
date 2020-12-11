@@ -4,7 +4,7 @@ Contributors: lewisself64
 Tags: block-patterns, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, threaded-comments, translation-ready, wide-blocks
 
 Requires at least: 4.5
-Tested up to: 5.4
+Tested up to: 5.6
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
