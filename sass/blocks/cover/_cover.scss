@@ -1,0 +1,24 @@
+.entry-content {
+	.wp-block-cover {
+		padding: 0;
+
+		&.alignfull {
+			margin: 0 auto;
+		}
+ 
+		.wp-block-cover__inner-container {
+			max-width: 900px;
+			padding: 32px 0;
+			margin: 0 auto;
+
+			> * {
+				margin: 0 auto 32px auto;
+				padding: 0 32px;
+			}
+
+			> *:last-child {
+				margin: 0 auto;
+			}
+		}
+	}
+}

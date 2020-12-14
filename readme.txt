@@ -1,20 +1,18 @@
 === Ada ===
 
 Contributors: lewisself64
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: block-patterns, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, threaded-comments, translation-ready, wide-blocks
 
 Requires at least: 4.5
-Tested up to: 5.4
+Tested up to: 5.6
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter WordPress theme.
-
 == Description ==
 
-WordPress theme
+Ada is a business focused WordPress theme. The theme comes with pre built block patterns such as; banners, call to actions, meet the team, pricing plans and services. Templates provide a flexible experience for any business creating a website for any sector.
 
 == Installation ==
 
@@ -26,7 +24,7 @@ WordPress theme
 
 = Does this theme support any plugins? =
 
-Ada includes support for WooCommerce and for Infinite Scroll in Jetpack.
+Ada does not support any plugins out of the box.
 
 == Changelog ==
 

@@ -32,6 +32,18 @@
 	}
 }
 
+.skip-link:focus {
+	border-radius: 0;
+	box-shadow: none;
+	background-color: #fff;
+	color: #000;
+	text-decoration: underline;
+	border: 2px solid #000;
+	outline: none;
+	top: 20px;
+	left: 20px;
+}
+
 /* Do not show the outline on the skip link target. */
 #primary[tabindex="-1"]:focus {
 	outline: 0;

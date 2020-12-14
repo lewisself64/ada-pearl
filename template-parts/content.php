@@ -4,12 +4,19 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Ada
+ * @package Ada_Pearl
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php
+		if ( !is_singular() ) {
+			ada_pearl_post_thumbnail();
+		}
+	?>
+
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -22,42 +29,54 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				ada_posted_on();
-				ada_posted_by();
+				ada_pearl_posted_on();
+				ada_pearl_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php ada_post_thumbnail(); ?>
-
 	<div class="entry-content">
 		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'ada' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+		if ( is_single() ) {
+			ada_pearl_post_thumbnail();
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ada' ),
-				'after'  => '</div>',
-			)
-		);
+			the_content(
+				sprintf(
+					wp_kses(
+						/* translators: %s: Name of current post. Only visible to screen readers */
+						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'ada-pearl' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					wp_kses_post( get_the_title() )
+				)
+			);
+
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ada-pearl' ),
+					'after'  => '</div>',
+				)
+			);
+		} else {
+			the_excerpt();
+
+			?>
+
+				<div class="wp-block-buttons">
+					<div class="wp-block-button is-style-outline"><a href="<?php echo esc_url( get_permalink() ); ?>" class="wp-block-button__link has-black-color has-text-color no-border-radius">Read Article</a></div>
+				</div>
+
+			<?php
+		}
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php ada_entry_footer(); ?>
+		<?php ada_pearl_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

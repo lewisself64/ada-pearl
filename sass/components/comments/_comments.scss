@@ -1,7 +1,126 @@
+#comments {
+	max-width: 1280px;
+	margin: 0 auto 32px auto;
+	background-color: #e8e8e8;
+	padding: 20px;
+	
+	#reply-title {
+		margin-top: 0;
+	}
+
+	.comments-title {
+		margin: 0 0 20px 0;
+	}
+
+	ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li:last-child {
+			margin: 0!important;
+		}
+	}
+
+	.comment-list {
+		background-color: #e1e1e1;
+		padding: 20px;
+
+		.children {
+			margin: 20px 0 0 0;
+			padding: 20px;
+			background-color: #e8e8e8;
+
+			li {
+				margin: 0 0 20px 0;
+			}
+
+			.children {
+				background-color: #e1e1e1;
+
+				.children {
+					background-color: #e8e8e8;
+				}
+			}
+		}
+
+		article {
+			margin: 0;
+		}
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	.required {
+		color: red;
+	}
+}
+
 .comment-content a {
 	word-wrap: break-word;
 }
 
+.comment-content {
+	margin: 20px 0;
+}
+
 .bypostauthor {
 	display: block;
+}
+
+#cancel-comment-reply-link {
+	margin: 0 0 0 10px;
+}
+
+.comment-edit-link {
+	margin: 0 0 0 5px;
+	line-height: 41px;
+}
+
+.comment-respond {
+	margin: 16px 0 0 0;
+}
+
+.comment-reply-link,
+.comment-edit-link,
+#cancel-comment-reply-link,
+#submit {
+	text-decoration: none;
+	font-weight: normal;
+	border: 2px solid #000;
+	padding: 12px 24px;
+	font-size: 18px;
+	border-radius: 0;
+	color: #000;
+
+	&:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+
+.comment-reply-link,
+.comment-edit-link,
+#cancel-comment-reply-link {
+	padding: 6px 12px;
+}
+
+.comment-reply-link,
+#cancel-comment-reply-link {
+	display: inline-block;
+}
+
+.form-submit {
+	margin: 20px 0 0 0;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+	input {
+		display: block;
+		width: 100%;
+	}
 }

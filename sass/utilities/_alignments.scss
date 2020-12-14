@@ -1,21 +1,35 @@
 .alignleft {
-
-	/*rtl:ignore*/
-	float: left;
-
-	/*rtl:ignore*/
-	margin-right: 1.5em;
-	margin-bottom: 1.5em;
+	text-align: left;
 }
 
 .alignright {
+	text-align: right;
+}
 
-	/*rtl:ignore*/
-	float: right;
+.wp-block-image {
+	.alignleft {
 
-	/*rtl:ignore*/
-	margin-left: 1.5em;
-	margin-bottom: 1.5em;
+		/*rtl:ignore*/
+		float: left;
+
+		/*rtl:ignore*/
+		margin-right: 16px;
+		margin-bottom: 16px;
+	}
+
+	.alignright {
+
+		/*rtl:ignore*/
+		float: right;
+
+		/*rtl:ignore*/
+		margin-left: 16px;
+		margin-bottom: 16px;
+	}
+
+	&.alignfull {
+		padding: 0;
+	}
 }
 
 .aligncenter {

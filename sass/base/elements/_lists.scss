@@ -1,3 +1,10 @@
+.entry-content {
+	> ul,
+	> ol {
+		padding: 0 48px;
+	}
+}
+
 ul,
 ol {
 	margin: 0 0 1.5em 3em;
@@ -13,8 +20,8 @@ ol {
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin: 0;
+	padding: 0 0 0 32px;
 }
 
 dt {

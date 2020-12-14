@@ -6,24 +6,17 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Ada
+ * @package Ada_Pearl
  */
 
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<div class="footer-widgets">
+			<?php dynamic_sidebar( 'footer-widgets-1' ); ?>
+		</div>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ada' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ada' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ada' ), 'ada', '<a href="http://selfdesigns.co.uk">Self Designs</a>' );
-				?>
+			<p><?php echo get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?> &copy;</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

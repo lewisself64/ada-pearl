@@ -1,0 +1,37 @@
+.entry-content .pricing-plans {
+	 .wp-block-group__inner-container .wp-block-columns {
+		margin: 0 auto 32px auto;
+
+		&:last-child {
+			margin: 0 auto;
+		}
+
+		.wp-block-column {
+			margin-bottom: 32px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.has-background {
+				height: 100%;
+
+				> .wp-block-group__inner-container {
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+
+					> p:last-of-type {
+						flex-grow: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 600px) {
+	.entry-content .pricing-plans .wp-block-group__inner-container .wp-block-columns .wp-block-column {
+		margin-bottom: 0;
+	}
+}
