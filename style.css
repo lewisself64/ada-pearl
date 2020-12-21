@@ -4,7 +4,7 @@ Theme URI: http://selfdesigns.co.uk/ada-pearl/
 Author: Self Designs
 Author URI: http://selfdesigns.co.uk
 Description: Ada Pearl is a business focused WordPress theme. The theme comes with pre built block patterns such as; banners, call to actions, meet the team, pricing plans and services. Templates provide a flexible experience for any business creating a website for any sector.
-Version: 1.0.0
+Version: 1.0.2
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -629,6 +629,12 @@ textarea {
 /*--------------------------------------------------------------
 # Blocks
 --------------------------------------------------------------*/
+/* Paragraphs
+--------------------------------------------- */
+.has-drop-cap {
+	overflow: auto;
+}
+
 /* Buttons
 --------------------------------------------- */
 .wp-block-buttons .wp-block-button {
@@ -1768,6 +1774,18 @@ textarea {
 	top: 5px;
 	width: auto;
 	z-index: 100000;
+}
+
+.skip-link:focus {
+	border-radius: 0;
+	box-shadow: none;
+	background-color: #fff;
+	color: #000;
+	text-decoration: underline;
+	border: 2px solid #000;
+	outline: none;
+	top: 20px;
+	left: 20px;
 }
 
 /* Do not show the outline on the skip link target. */
