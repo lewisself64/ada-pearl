@@ -1,6 +1,6 @@
 #comments {
 	max-width: 1280px;
-	margin: 0 auto 32px auto;
+	margin: 32px;
 	background-color: #e8e8e8;
 	padding: 20px;
 	
@@ -122,5 +122,11 @@
 	input {
 		display: block;
 		width: 100%;
+	}
+}
+
+@media(min-width: 1360px) {
+	#comments {
+		margin: 0 auto 32px auto;
 	}
 }
