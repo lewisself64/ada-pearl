@@ -1,0 +1,9 @@
+figure.wp-block-pullquote {
+  padding: 64px 0;
+  border-width: 5px 0;
+  border-style: solid;
+
+  &.has-background {
+    padding: 32px;
+  }
+}
