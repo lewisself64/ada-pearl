@@ -2,6 +2,10 @@
 	margin: 0 auto;
 	padding: 0;
 
+	.wp-block-columns.alignfull {
+		padding: 0;
+	}
+
 	.wp-block-column {
 		margin: 0;
 	}
@@ -15,7 +19,7 @@
 
 @media(min-width: 782px) {
 	.entry-content .portfolio {
-		flex-wrap: wrap; 
+		flex-wrap: wrap;
 	}
 }
 
