@@ -686,6 +686,10 @@ textarea {
 	padding: 0 32px;
 }
 
+.entry-content .blocks-gallery-item__caption {
+	pointer-events: none;
+}
+
 /* Group
 --------------------------------------------- */
 .entry-content .wp-block-group {
@@ -781,6 +785,18 @@ textarea {
 	.has-background .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
 		padding: 0 32px 0 0;
 	}
+}
+
+/* Pull Quote
+--------------------------------------------- */
+figure.wp-block-pullquote {
+	padding: 64px 0;
+	border-width: 5px 0;
+	border-style: solid;
+}
+
+figure.wp-block-pullquote.has-background {
+	padding: 32px;
 }
 
 /* Quote
@@ -913,12 +929,6 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
-.comment-navigation .nav-links,
-.posts-navigation .nav-links,
-.post-navigation .nav-links {
-	display: flex;
-}
-
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -930,6 +940,26 @@ textarea {
 .post-navigation .nav-next {
 	text-align: end;
 	flex: 1 0 50%;
+}
+
+.post-navigation .nav-links {
+	max-width: 1280px;
+	margin: 32px 32px 0 32px;
+}
+
+.post-navigation .nav-links a {
+	border: solid 2px #000;
+	width: 100%;
+	padding: 12px 24px;
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	margin: 0 0 32px 0;
+}
+
+.post-navigation .nav-links a:hover {
+	text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -980,6 +1010,27 @@ textarea {
 	}
 	.main-navigation ul ul a {
 		width: 200px;
+	}
+}
+
+@media (min-width: 900px) {
+	.site-main .post-navigation {
+		margin: 0;
+	}
+	.site-main .post-navigation .nav-links {
+		display: flex;
+	}
+	.site-main .post-navigation .nav-links a {
+		width: auto;
+	}
+}
+
+@media (min-width: 1360px) {
+	.post-navigation .nav-links {
+		margin: 0 auto 32px auto;
+	}
+	.post-navigation .nav-links a {
+		margin-bottom: 0;
 	}
 }
 
@@ -1216,6 +1267,7 @@ textarea {
 	padding: 32px 0;
 	background-color: #e1e1e1;
 	text-align: center;
+	clear: both;
 }
 
 .entry-footer span {
@@ -1257,7 +1309,7 @@ textarea {
 --------------------------------------------- */
 #comments {
 	max-width: 1280px;
-	margin: 0 auto 32px auto;
+	margin: 32px;
 	background-color: #e8e8e8;
 	padding: 20px;
 }
@@ -1383,6 +1435,12 @@ textarea {
 	width: 100%;
 }
 
+@media (min-width: 1360px) {
+	#comments {
+		margin: 0 auto 32px auto;
+	}
+}
+
 /* Widgets
 --------------------------------------------- */
 .widget {
@@ -1495,6 +1553,8 @@ textarea {
 .site-footer .footer-widgets .widget {
 	margin: 0;
 	padding: 0 32px 32px 32px;
+	display: inline-block;
+	width: 100%;
 }
 
 .site-footer .footer-widgets .widget > * {
@@ -1634,7 +1694,6 @@ textarea {
 	.site-footer .footer-widgets .widget {
 		padding: 0 32px 32px 32px;
 		width: 50%;
-		display: inline-block;
 		vertical-align: top;
 	}
 }
@@ -1674,6 +1733,10 @@ textarea {
 --------------------------------------------- */
 .entry-content .portfolio {
 	margin: 0 auto;
+	padding: 0;
+}
+
+.entry-content .portfolio .wp-block-columns.alignfull {
 	padding: 0;
 }
 

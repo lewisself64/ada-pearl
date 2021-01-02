@@ -73,10 +73,6 @@
 		margin: 0 0 1.5em;
 	}
 
-	.nav-links {
-		display: flex;
-	}
-
 	.nav-previous {
 		flex: 1 0 50%;
 	}
@@ -84,6 +80,26 @@
 	.nav-next {
 		text-align: end;
 		flex: 1 0 50%;
+	}
+}
+
+.post-navigation .nav-links {
+	max-width: 1280px;
+	margin: 32px 32px 0 32px;
+
+	a {
+		border: solid 2px #000;
+		width: 100%;
+		padding: 12px 24px;
+		color: #000;
+		text-decoration: none;
+		display: inline-block;
+		text-align: center;
+		margin: 0 0 32px 0;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -152,6 +168,30 @@
 					width: 200px;
 				}
 			}
+		}
+	}
+}
+
+@media(min-width: 900px) {
+	.site-main .post-navigation {
+		margin: 0;
+
+		.nav-links {
+			display: flex;
+
+			a {
+				width: auto;
+			}
+		}
+	}
+}
+
+@media (min-width: 1360px) {
+	.post-navigation .nav-links {
+		margin: 0 auto 32px auto;
+
+		a {
+			margin-bottom: 0;
 		}
 	}
 }

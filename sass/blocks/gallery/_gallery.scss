@@ -1,5 +1,9 @@
 .entry-content {
 	> ul.wp-block-gallery {
 		padding: 0 32px;
-	} 
+	}
+
+	.blocks-gallery-item__caption {
+		pointer-events: none; 
+	}
 }
