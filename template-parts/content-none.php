@@ -32,7 +32,7 @@
 			?>
 
 			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'ada-pearl' ); ?></p>
-			<h2>Search</h2>
+			<h2><?php esc_html_e( 'Search', 'ada-pearl' ); ?></h2>
 			<?php
 			get_search_form();
 
