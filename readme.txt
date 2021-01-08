@@ -1,6 +1,6 @@
 === Ada Pearl ===
 
-Contributors: lewisself64
+Contributors: selfdesigns
 Tags: block-patterns, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, threaded-comments, translation-ready, wide-blocks
 
 Requires at least: 5.0
