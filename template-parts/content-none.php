@@ -40,7 +40,7 @@
 			?>
 
 			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'ada-pearl' ); ?></p>
-			<h2>Search</h2>
+			<h2><?php esc_html_e( 'Search', 'ada-pearl' ); ?></h2>
 			<?php
 			get_search_form();
 
