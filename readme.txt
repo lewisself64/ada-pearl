@@ -44,3 +44,8 @@ Ada Pearl does not support any plugins out of the box.
 
 = 1.0.0 =
 * Initial release.
+
+== Copyright ==
+
+Images
+Art by Wilhelm Marstrand 1810-1873. Public domain.
