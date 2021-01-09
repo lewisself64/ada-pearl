@@ -28,6 +28,13 @@ Ada Pearl does not support any plugins out of the box.
 
 == Changelog ==
 
+= 1.0.3 =
+* Escaped output in content folder and footer.php
+* Fixed missing header image
+* Replaced pattern description & images
+* Improved missing / incorrect documentation
+* Fixed broken centered alignment in Gutenberg editor
+
 = 1.0.2 =
 * Fixed broken padding on portfolio pattern.
 * Fixed broken margin on widgets when displayed on mobile.
